@@ -1,11 +1,19 @@
 {
-    "extends": "../../tsconfig.json",
     "compilerOptions": {
         "outDir": "lib",
         "rootDir": "src",
         "declaration": true,
-        "allowJs": false
+        "allowJs": false,
+        "jsx": "react" /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */,
+        "moduleResolution": "node" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */,
+        "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
     },
-    "exclude": ["**/*.spec.ts", "**/*.spec.tsx", "**/*.spec.js"],
-    "include": ["src"]
+    "exclude": [
+        "**/*.spec.ts",
+        "**/*.spec.tsx",
+        "**/*.spec.js"
+    ],
+    "include": [
+        "src"
+    ]
 }
